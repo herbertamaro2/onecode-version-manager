@@ -30,30 +30,30 @@ export default function Home() {
 
   return (
 
-    <main className="flex min-h-screen flex-col relative pt-5 w-11/12 mx-auto">
-      <div className="w-full flex items-center justify-between pb-10">
+    <main className="flex min-h-screen flex-col relative pt-5 w-full sm:w-11/12 px-5 sm:px-0 sm:mx-auto">
+      <div className="w-full flex flex-col sm:flex-row items-center justify-between pb-10">
         <img
           src="/logo.png"
           alt="Vercel Logo"
           style={{ height: 60 }}
         />
-        <h1 className='text-3xl font-bold'>Gerenciamento de Versão</h1>
+        <h1 className='text-xl sm:text-3xl font-bold text-center sm:text-right'>Gerenciamento de Versão</h1>
       </div>
-      <div className="w-full flex flex-row text-center justify-between bg-gray-100 rounded p-5">
-        <p className="text-xl flex flex-col items-start w-auto">
+      <div className="w-full flex flex-col sm:flex-row text-center justify-between bg-gray-100 rounded sm:p-5">
+        <p className="text-xl flex flex-col items-center sm:items-start w-auto">
           <span><strong>Estável:</strong> 2024.06.1286-beta</span>
           <a href={stableCommit} target="_blank" className="text-md leading-5 text-blue-500">Commit</a>
         </p>
-        <p className="text-xl flex flex-col items-end w-auto">
+        <p className="text-xl flex flex-col items-center sm:items-end w-auto">
           <span><strong>Última versão:</strong> 2024.06.1289-beta</span>
           <a href={lastCommit} target="_blank" className="text-md leading-5 text-blue-500">Commit</a>
         </p>
         
       </div>
 
-      <div className='w-full flex justify-between pt-10 pb-20 gap-5'>
+      <div className='w-full flex flex-wrap justify-between pt-10 pb-20 gap-5'>
 
-        <div className="w-4/12">
+        <div className="w-full sm:w-4/12 pb-10">
           <h3 className='text-xl font-bold mb-4'>Atualizações</h3>
 
           <ul area="list" className="divide-y divide-gray-100">
@@ -96,7 +96,7 @@ export default function Home() {
           </ul>
         </div>
 
-        <div className="w-4/12">
+        <div className="w-full sm:w-4/12 pb-10">
           <h3 className='text-xl font-bold mb-4'>Arquivos alterados</h3>
 
           {filesFrom ? (
@@ -121,7 +121,7 @@ export default function Home() {
           )}
         </div>
 
-        <div className="w-4/12">
+        <div className="w-full sm:w-4/12 pb-10">
           <h3 className='text-xl font-bold mb-4'>Procedimento de Testes</h3>
           {fileProcedure ? (
             <ul area="list" className="divide-y divide-gray-100">
