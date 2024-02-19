@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from "react";
-import { FaArrowLeft, FaRegFileCode } from "react-icons/fa";
+import { FaArrowLeft, FaLock, FaRegFileCode } from "react-icons/fa";
 import { MdOutlineTaskAlt } from "react-icons/md";
 import updates from './updates.json'
 import procedures from './procedures.json'
@@ -48,7 +48,7 @@ export default function Home() {
           <span><strong>Última versão:</strong> 2024.06.1289-beta</span>
           <a href={lastCommit} target="_blank" className="text-md leading-5 text-blue-500">Commit</a>
         </p>
-        
+
       </div>
 
       <div className='w-full flex flex-wrap sm:flex-nowrap justify-between pt-10 pb-20 gap-5'>
@@ -58,14 +58,14 @@ export default function Home() {
 
           <ul area="list" className="divide-y divide-gray-100">
             {updates && updates.map((update, index) => (
-              <li key={update.title} 
-              className={`list-li flex justify-between gap-x-6 py-5 ${filesFrom === String(index) && 'active'}`}
-              onClick={() => setFilesFrom(String(index))}>
+              <li key={update.title}
+                className={`list-li flex justify-between gap-x-6 py-5 ${filesFrom === String(index) && 'active'}`}
+                onClick={() => setFilesFrom(String(index))}>
                 <div className="flex min-w-0 gap-x-4">
-                  {update.imageUrl ? <img className="h-12 w-12 flex-none rounded-full bg-gray-50" 
-                  src={update.imageUrl} alt=""
-                  onClick={() => handleImage(update.imageUrl)} /> :
-                  <img  className="h-12 w-12 flex-none rounded-full bg-gray-50" src={'/noimage.png'} />
+                  {update.imageUrl ? <img className="h-12 w-12 flex-none rounded-full bg-gray-50"
+                    src={update.imageUrl} alt=""
+                    onClick={() => handleImage(update.imageUrl)} /> :
+                    <img className="h-12 w-12 flex-none rounded-full bg-gray-50" src={'/noimage.png'} />
                   }
                   <div className="min-w-0 flex-auto">
                     <p className="text-sm font-semibold leading-6 text-gray-900">{update.title}</p>
@@ -82,7 +82,7 @@ export default function Home() {
                         }
                         <span className="text-xs leading-5 text-gray-500">{update.type}</span>
                         {update.taskUrl && <a href={update.taskUrl} target="_blank"
-                        className="text-xs leading-5 text-blue-500">ABRIR TAREFA</a>}
+                          className="text-xs leading-5 text-blue-500">ABRIR TAREFA</a>}
                       </div>
                     </p>
                   </div>
@@ -102,9 +102,9 @@ export default function Home() {
           {filesFrom ? (
             <ul area="list" className="divide-y divide-gray-100">
               {updates[Number(filesFrom)].affected.map((file, index) => (
-                <li key={index} 
-                className={`flex list-li justify-between gap-x-6 py-5  ${fileProcedure === file && 'active'}`}
-                onClick={() => setFileProcedure(file)}
+                <li key={index}
+                  className={`flex list-li justify-between gap-x-6 py-5  ${fileProcedure === file && 'active'}`}
+                  onClick={() => setFileProcedure(file)}
                 >
                   <div className="flex min-w-0 gap-x-4">
                     <div className="min-w-0 flex  items-center gap-5 flex-auto" >
@@ -137,6 +137,10 @@ export default function Home() {
                   </li>
                 ))
               ))}
+              <li className="p-3">
+                <button disabled className="w-full text-center flex items-center justify-center bg-gray-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full flex items-center gap-4 mt-4 mb-4">
+                <FaLock /> Realizar Testes</button>
+              </li>
             </ul>
           ) : (
             <div className='bg-gray-100 w-full h-full flex items-center justify-center rounded'>
