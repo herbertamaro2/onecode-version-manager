@@ -1,0 +1,106 @@
+[
+    {
+        "file": "backend/TicketController",
+        "area": "Atendimentos",
+        "tasks": [
+            "Aceitar Atendimento",
+            "Listar Atendimentos",
+            "Enviar e receber mensagem em um atendimento",
+            "Transferir Atendimento",
+            "Pausar Atendimento",
+            "Remover Atendimento"
+        ]
+    },
+    {
+        "file": "backend/whatsappBaileys",
+        "area": "Atendimentos",
+        "tasks": [
+            "Enviar e receber mensagens",
+            "Deletar Mensagens",
+            "Editar Mensagens",
+            "Reagir Mensagens",
+            "Capturar Contatos",
+            "Enviar Gif",
+            "Anexar Imagens, Videos ou Documentos"
+        ]
+    },
+    {
+        "file": "backend/UpdateTicketService",
+        "area": "Atendimentos",
+        "tasks": [
+            "Aceitar Atendimento",
+            "Pausar Atendimento",
+            "Finalizar Atendimento",
+            "Remover Atendimento",
+            "Avaliação do Atendimento"
+        ]
+    },
+    {
+        "file": "frontend/MessagesList",
+        "area": "Atendimentos",
+        "tasks": [
+            "Renderização de mensagens no atendimento",
+            "Arrasta e Soltar ao enviar arquivo ou imagem",
+            "Menu de opções nas mensagens",
+            "Modal - Mensagem Reagida",
+            "Modal - Mensagem Editada"           
+        ]
+    },
+    {
+        "file": "frontend/Metrics",
+        "area": "Atendimentos",
+        "tasks": [
+            "Visualização da página de métricas",
+            "Utilizar os filtros das métricas"
+        ]
+    },
+    {
+        "file": "frontend/DateRangePicker",
+        "area": "Atendimentos",
+        "tasks": [
+            "Filtra em Dashboard - Geral",
+            "Filtra em Dashboard - Atendimentos",
+            "Filtra em Dashboard - Atendimentos",
+            "Filtra no Atendimentos na busca"
+        ]
+    },
+    {
+        "file": "frontend/TicketListItem",
+        "area": "Atendimentos",
+        "tasks": [
+            "Aceitar Atendimento",
+            "Fixa atendimento em grupos"
+        ]
+    },
+    {
+        "file": "frontend/MessageOptionsMenu",
+        "area": "Atendimentos",
+        "tasks": [
+            "Responder mensagem",
+            "Reagir mensagem",
+            "Editar mensagem",
+            "Deletar mensagem",
+            "Encaminha mensagem",
+            "Criar Nota",
+            "Traduzir",
+            "Buscar",
+            "Transcrever áudio",
+            "Gerador de Imagem",
+            "Texto para Fala",
+            "Download"
+        ]
+    },
+    {
+        "file": "backend/MessageController",
+        "area": "Atendimentos",
+        "tasks": [
+            "Enviar e receber mensagens",
+            "Deletar Mensagens",
+            "Editar Mensagens",
+            "Reagir Mensagens",
+            "Capturar Contatos",
+            "Enviar Gif",
+            "Anexar Imagens, Videos ou Documentos"
+        ]
+    }
+]

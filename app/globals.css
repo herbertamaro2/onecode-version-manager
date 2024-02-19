@@ -16,18 +16,108 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
 }
+
+.fade-out {
+  opacity: 1;
+  animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+::-webkit-scrollbar {
+  background: #bbb;
+  width: 8px;
+  height: 0;
+  cursor: n-resize
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  cursor: n-resize
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #000;
+  width: 8px;
+  cursor: n-resize
+}
+ul {
+  border-radius: 20px;
+
+}
+ul li{
+  background: rgba(255,255,255,0.8);
+  transition: all ease 0.5s;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+ul li.active, ul li.active:hover {
+background-color: #000;
+color: #fff;
+}
+
+ul li.active  .text-gray-900, ul li.active:hover  .text-gray-900{
+  color: #fff !important;
+}
+
+ul li:hover{
+  background: rgba(255,255,255,1);
+  transform: scale(1.03);
+}
+
+body {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  font-family: "Poppins", Arial, sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  font-weight: normal !important;
+  /*background: #eee !important;*/
+  background-image: url('/bg1.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  color: #000;
+}
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.list-li {
+  cursor: pointer;
 }

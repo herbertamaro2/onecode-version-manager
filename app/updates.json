@@ -1,0 +1,54 @@
+[
+    {
+      "title": "Lista de quem reagiu a mensagem",
+      "type": "NOVIDADE",
+      "area": "Atendimentos",
+      "taskUrl": "",
+      "imageUrl": "/18-02/list-react.png",
+      
+      "priority": "SEM PRIORIDADE",
+      "affected": [
+        "backend/MessageController",
+        "frontend/MessagesList"
+      ]
+    },
+    {
+      "title": "Mensagem enviada não aparece",
+      "type": "BUG",
+      "area": "Atendimentos",
+      "taskUrl": "https://www.notion.so/mensagem-enviada-n-o-aparece-f2ace3c017a3466388770317e3249622?pvs=4",
+      "imageUrl": "",
+      "priority": "URGENTE",
+      "affected": [
+        "backend/TicketController",
+        "backend/whatsappBaileys",
+        "backend/UpdateTicketService"
+      ]
+    },
+    {
+      "title": "Iniciar com filtro de 1 dia",
+      "type": "BUG",
+      "area": "Métricas",
+      "taskUrl": "",
+      "imageUrl": "",
+      "lastSeen": null,
+      "priority": "URGENTE",
+      "affected": [
+        "frontend/Metrics",
+        "frontend/DateRangePicker"
+      ]
+    },
+    {
+      "title": "Resolução do bug ao aceitar Atendimentos",
+      "type": "BUG",
+      "area": "Atendimentos",
+      "taskUrl": "https://www.notion.so/Bug-ao-aceitar-Atendimentos-Alpha-8b92087ef65d465481c45480604094f5?pvs=4",
+      "imageUrl": "",
+      
+      "priority": "MÉDIA",
+      "affected": [
+        "frontend/TicketListItem"
+      ]
+    }
+  ]
+  
