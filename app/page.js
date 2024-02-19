@@ -51,7 +51,7 @@ export default function Home() {
         
       </div>
 
-      <div className='w-full flex flex-wrap justify-between pt-10 pb-20 gap-5'>
+      <div className='w-full flex flex-wrap sm:flex-nowrap justify-between pt-10 pb-20 gap-5'>
 
         <div className="w-full sm:w-4/12 pb-10">
           <h3 className='text-xl font-bold mb-4'>Atualizações</h3>
